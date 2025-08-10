@@ -1,0 +1,40 @@
+:root{
+  --bg1: #fffafc;
+  --card: #ffffff;
+  --text: #333;
+  --accent1: #ffd6e0;
+  --accent2: #d9f7f1;
+  --accent3: #fef3c7;
+  --accent4: #e7d7ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, var(--accent2), var(--accent1));
+  color:var(--text);
+  min-height:100vh;
+}
+.app{
+  max-width:920px;
+  margin:20px auto;
+  padding:18px;
+}
+.header{display:flex; justify-content:space-between; align-items:center;}
+.brand{display:flex; gap:12px; align-items:center;}
+.logo{width:56px; height:56px; border-radius:12px; background: linear-gradient(135deg, #ffd6e0, #d9f7f1); display:flex;align-items:center;justify-content:center;font-weight:700; box-shadow: 0 6px 18px rgba(0,0,0,0.08);}
+.card{background:var(--card); padding:14px; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-top:14px;}
+.row{display:flex; gap:12px; align-items:center;}
+.small{font-size:13px; color:#666}
+.button{background:transparent; border:1px solid rgba(0,0,0,0.06); padding:8px 12px; border-radius:10px; cursor:pointer;}
+.bottom-nav{position:fixed; left:50%; transform:translateX(-50%); bottom:18px; width:min(920px,calc(100% - 40px)); display:flex; justify-content:space-around; background:linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); padding:8px; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.08);}
+.nav-btn{background:transparent; border:none; padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:600}
+.input{width:100%; padding:10px 12px; border-radius:10px; border:1px solid #eee}
+.doodle{opacity:0.95}
+.profile-modal{position:fixed; right:18px; top:88px; width:320px; z-index:40}
+.mini{font-size:12px; color:#555}
+.progressbar{background:#eee; height:10px; border-radius:999px; overflow:hidden}
+.progress{height:100%; background:linear-gradient(90deg,#ffd6e0,#e7d7ff)}
+.auth-card{max-width:520px; margin:30px auto; padding:18px;}
+.tim-widget .tim-avatar{width:64px; height:64px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700; background:linear-gradient(135deg,#e7d7ff,#fef3c7)}
+.footer-note{font-size:13px; color:#666; text-align:center; margin-top:8px}
